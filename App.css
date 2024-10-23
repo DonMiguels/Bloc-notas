@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif; 
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    max-height: calc(100vh - 50px); 
+    overflow-y: auto; 
+    margin: 10px auto;
+    padding: 30px;
+    background-color: #f3f3f3;
+    border: #0003a1;
+    border-radius: 80px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto -100px; 
+    width: 400px; 
+    margin-top: -60px; 
+    filter: brightness(0) saturate(100%) invert(24%) sepia(83%) saturate(1117%) hue-rotate(192deg) brightness(100%) contrast(100%);
+    transition: transform 0.4s ease, filter 0.4s ease; 
+}
+
+.logo:hover {
+    transform: scale(1.1) rotate(5deg) translateY(-2px);
+    filter: brightness(0) saturate(100%) invert(24%) sepia(83%) saturate(1117%) hue-rotate(192deg) brightness(120%) contrast(100%); /* Aumenta el brillo */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #2481eb;
+}
+
+button:hover {
+    background-color: #357ab8;
+}
+
+.borrar-nota {
+    position: fixed;
+    border: none;
+    border-radius: 50%;
+    background-color: #2481eb;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.editar-nota {
+    bottom: 157px;
+    right: 75px;
+    width: 70px;
+    height: 70px;
+}
+
+.editar-nota:hover {
+    background-color: #75b0f4;
+}
+
+.label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: #394a56;
+}
+
+.label-text {
+    margin-left: 16px;
+}
+
+.toggle-state:checked + .toggle .indicator {
+    transform: translateX(100%);
+}
+
+.lista {
+    display: block;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.separator {
+    height: 5px;
+    background-color: #383737;
+    margin: 20px 0;
+    width: 100%;
+    
+}
+
+
+.container {
+  overflow-y: auto; 
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+
+.container::-webkit-scrollbar {
+  display: none; 
+}

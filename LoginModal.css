@@ -1,0 +1,95 @@
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 2.5em;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 2px 2px;
+    width: 300px; 
+    text-align: center;
+    transition: 0.4s ease-in-out;
+}
+
+.modal-content:hover {
+    transform: translateY(-0.5em);
+    border: 1px solid #171717; 
+    box-shadow: 10px 10px 0px #666666;
+}
+
+h2 {
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: whitesmoke;
+    outline: none;
+    padding: 0.7em;
+    transition: 0.4s ease-in-out;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+    box-shadow: 6px 6px 0px #969696, -3px -3px 10px #ffffff;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background: #ffffff;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.modal-content button {
+    margin-top: 2em;
+    padding: 0.7em;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #007BFF;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-content button:hover {
+    background-color: #0056b3;
+    box-shadow: 6px 6px 0px #969696, -3px -3px 10px #ffffff;
+    transform: translateY(-0.5em);
+}
+
+.modal-content button:active {
+    transition: 0.2s;
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}

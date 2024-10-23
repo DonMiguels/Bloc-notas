@@ -1,0 +1,10 @@
+.borrar-nota {
+    bottom: 235px;
+    right: 80px;
+    width: 60px;
+    height: 60px;
+    z-index: 20;
+  }
+  .borrar-nota:hover {
+    background-color: #75b0f4;
+  }
